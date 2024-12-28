@@ -11,6 +11,7 @@
     {:name :account-page
      :view pages/account-page
      :controllers [{:start (fn []
+                             ; There should be some condition here
                              (when true
                                (rfe/navigate :non-authorized-page {:replace true})))}]}]
 
